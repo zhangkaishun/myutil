@@ -2,21 +2,18 @@ package kaishun.zks.test.基础.http请求;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 
 import org.junit.Test;
 
-import com.sun.org.apache.bcel.internal.util.ByteSequence;
-
 public class 读取页面数据 {
+/*	public static String path = "http://localhost:8080/quotation-rank-frontend/mobileHttpServlet";
+*/
 	public static String path = "http://localhost:8080/quotation-rank-frontend/mobileHttpServlet";
 
 	@Test
