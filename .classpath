@@ -5,5 +5,12 @@
 	<classpathentry kind="lib" path="lib/junit-4.8.1.jar"/>
 	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="lib/jaxen-1.1-beta-7.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/fluent-hc-4.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient-4.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient-cache-4.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpmime-4.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
