@@ -8,6 +8,10 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeMap;
 
 import org.junit.Test;
 
@@ -15,7 +19,6 @@ public class 读取页面数据 {
 /*	public static String path = "http://localhost:8080/quotation-rank-frontend/mobileHttpServlet";
 */
 	public static String path = "http://localhost:8080/quotation-rank-frontend/mobileHttpServlet";
-
 	@Test
 	public void getUrlResource() {
 		InputStream in = null;
@@ -39,8 +42,8 @@ public class 读取页面数据 {
 			DataOutputStream dataout = new DataOutputStream(
 					connection.getOutputStream());
 
-			dataout.write("<?xmlversion='1.0'encoding='GB2312'?><MEBS><REQ name='tzprank'><N>10</N></REQ></MEBS>"
-					.getBytes());
+			dataout.write("<?xmlversion='1.0'encoding='UTF-8'?><MEBS><REQ name='ztzprank'><N>10</N></REQ></MEBS>".getBytes());
+			//dataout.write("<?xmlversion='1.0' encoding='UTF-8'?><MEBS><REQ name='ddrank'><N>-1</N></REQ></MEBS>".getBytes());
 			dataout.flush();
 			dataout.close();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
