@@ -17,11 +17,16 @@ public class х╚ееап {
 	}
 	char[] tmp=Arrays.copyOf(a, a.length);
 	for(int i=start;i<a.length;i++){
-		char temp=a[start];
-		tmp[start]=a[i];
-		tmp[i]=temp;
+		swap(tmp,i,start);
 		range(tmp,start+1);
-	}
+		swap(tmp,start,i);
 		
 	}
+	}
+	
+	  public static void swap(char[] s,int i,int j) {
+	        char tmp = s[i];
+	        s[i] = s[j];
+	        s[j] = tmp;
+	    }
 }
