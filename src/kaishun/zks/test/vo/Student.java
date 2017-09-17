@@ -12,6 +12,8 @@ public class Student implements Cloneable,Serializable{
 	private String address;
 	private Clazz clazz;
 	
+	public Student() {
+	}
 	
 	public Student(int id, String name, String address) {
 		super();

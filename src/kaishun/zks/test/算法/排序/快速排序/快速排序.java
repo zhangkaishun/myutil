@@ -13,6 +13,8 @@ public class 快速排序 {
 
 	}
 
+	
+	
 	/**
 	 * 快速排序<br/>
 	 * <ul>
@@ -46,6 +48,7 @@ public class 快速排序 {
 			System.out.println(Arrays.toString(numbers));
 
 		} while (i <= j);
+		System.out.println("i=:"+i+"j=:"+j);
 		if (start < j) {
 			quickSort(numbers, start, j);
 		}

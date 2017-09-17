@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 
 import kaishun.zks.collectionutil.ListUtil;
@@ -18,11 +19,12 @@ public class ListUtilTest {
 	@Test
 	public void testRemoveAll(){
 		
-		List<String> originalList=new ArrayList<String>();
+		List<String> originalList=new LinkedList<String>();
 		originalList.add("1");
 		originalList.add("2");
 		originalList.add("6");
 		originalList.add("4");
+		System.out.println(originalList);
 		List<String> removeList=new ArrayList<String>();
 		removeList.add("2");
 		removeList.add("4");
